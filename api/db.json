@@ -1,0 +1,193 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "enabled": true,
+      "name": "B.003.001: Administrativ",
+      "costTypes": [
+        { "id": 1, "name": "Admin/IT" },
+        { "id": 2, "name": "Tool-Unterhalt" },
+        { "id": 3, "name": "Projekt-Programm" },
+        { "id": 4, "name": "Ferien" },
+        { "id": 5, "name": "Krankheit" },
+        { "id": 6, "name": "Bezahlte Absenzen" }
+      ]
+    },
+    {
+      "id": 2,
+      "enabled": true,
+      "name": "B.004.001: Business Development",
+      "costTypes": [
+        { "id": 1, "name": "Marketing" },
+        { "id": 2, "name": "Partnerschaften" },
+        { "id": 3, "name": "Aquisition" }
+      ]
+    },
+    {
+      "id": 3,
+      "enabled": true,
+      "name": "B.005.001: Ausbildung",
+      "costTypes": [
+        { "id": 1, "name": "Individuelle Ausbildung" },
+        { "id": 2, "name": "Konferenz- und Kursteilnahme" },
+        { "id": 3, "name": "Zertifizierung inkl. Vorbereitung" }
+      ]
+    },
+    {
+      "id": 4,
+      "enabled": true,
+      "name": "B.005.003: Fokustage",
+      "costTypes": [
+        { "id": 1, "name": "Vorbereitung" },
+        { "id": 2, "name": "Teilnahme" }
+      ]
+    },
+    {
+      "id": 5,
+      "enabled": true,
+      "name": "B.005.004: Mentoring",
+      "costTypes": [
+        { "id": 1, "name": "Mentor" },
+        { "id": 2, "name": "Mentee" }
+      ]
+    }
+  ],
+
+  "times": [
+    {
+      "id": 1,
+      "date": "2016-12-01T00:00",
+      "amount": 90,
+      "project": "B.003.001: Administrativ",
+      "costType": "Admin/IT",
+      "comment": "Zeiterfassung und Monatsabschluss"
+    },
+    {
+      "id": 2,
+      "date": "2016-12-01T00:00",
+      "amount": 120,
+      "project": "B.005.001: Ausbildung",
+      "costType":"Individuelle Ausbildung",
+      "comment": "Angular 2: Routing & Navigation"
+    },
+    {
+      "id": 3,
+      "date": "2016-12-01T00:00",
+      "amount": 320,
+      "project": "B.003.001: Ausbildung",
+      "costType": "Individuelle Ausbildung",
+      "comment": "Angular 2: NgRx"
+    },
+    {
+      "id": 4,
+      "date": "2016-12-02T00:00",
+      "amount": 280,
+      "project":"B.005.003: Fokustage",
+      "costType": "Vorbereitung",
+      "comment": "Vorbereitung Come&Go: NoSql Datenbanken"
+    }
+  ],
+
+  "courses": [
+    {
+      "id": 1,
+      "title": ".NET Application Development: Konzepte und Werkzeuge",
+      "category": "Software Engineering",
+      "teacher": "Urs Enzler",
+      "date": "Donnerstag/Freitag, 16./17. März 2017, 09.00-17.00 Uhr",
+      "abstract": "Vertiefen Sie Ihre Kenntnisse in der Erstellung flexibler, erweiterbarer, multi-threaded und wartbarer Softwaresysteme. Lernen Sie Werkzeuge kennen für die Implementation von Zustandsmaschinen, Event Messaging, Multithreading und weiteren wiederkehrenden Aufgaben.",
+      "content": "Zustandsmaschinen, Application Bootstrapping, in-process Event Messaging, Businessregeln und Multithreading sind wiederkehrende Aufgabenstellungen in der Softwareentwicklung mit .Net. In diesem Kurs lernen Sie Konzepte und Werkzeuge kennen, um diese Herausforderungen zu meistern. Das Resultat sind erweiterbare, flexible und wartbare Softwaresysteme. Während der praktischen Übungen erstellen Sie eine Beispielapplikation, die Ihnen anschliessend an den Kurs als Referenzimplementation dient, damit Sie das Gelernte in Ihrem aktuellen Projekt umsetzen können.",
+      "target": "Sie lernen die Erstellung von flexiblen, wartbaren, performanten und responsiven .NET-Applikationen mit Hilfe der Open-Source-Bibliothek Appccelerate und TPL Dataflows."
+    },
+    {
+      "id": 2,
+      "title": "Application Lifecycle Management mit dem Team Foundation Server 2015",
+      "category": "Software Engineering",
+      "teacher": "Marco Röösli",
+      "date": "Mittwoch, 7. Dezember 2016, 09.00-17.00 Uhr",
+      "abstract": "Erfahren Sie mehr über die Toolunterstützung vom TFS 2015 bei der täglichen Entwicklungsarbeit. Erleben Sie den ganzen ALM-Zyklus mit dem TFS 2015.",
+      "content": "Vom Erfassen der User Stories über Bug Tracking und Testing bis zur Release-Erstellung: Im diesem Kurs wird in kleinen Teams eine Software implementiert unter Verwendung der ALM-Hilfsmittel, die der TFS 2015 bietet. Dabei liegt der Fokus nicht auf der Codierung, sondern auf den TFS-spezifischen Aspekten.",
+      "target": "In diesem Kurs lernen Sie, wie ein Entwickler täglich mit dem TFS arbeitet und was der TFS 2015 an Entwicklungsunterstützung bietet."
+    },
+    {
+      "id": 3,
+      "title": "Certified Scrum Master (CSM)",
+      "category": "Agile/Scrum",
+      "teacher": "Reza Farhang",
+      "date": "Dienstag/Mittwoch, 2./3. Mai 2017, 09.00-17.00 Uhr",
+      "abstract": "Scrum is a popular Agile software development method. In this two-day certification course, prepared in accordance with the Scrum Alliance's requirements, you will learn the Scrum basics through practical exercises.",
+      "content": "Scrum is a popular Agile software development method. In this two-day certification course, prepared in accordance with the Scrum Alliances requirements, you will learn the Scrum basics through practical exercises. This course is organized by bbv in cooperation with Crisp AB from Stockholm, Sweden. Crisp AB employs experienced and committed Scrum trainers, among them Henrik Kniberg, author of the standard reference Scrum and XP from the Trenches. The course fee covers the certification fee as well as a two-year membership in the Scrum Alliance. ",
+      "target": "After attending this course, participants are enabled to apply Scrum in their own projects and are familiar with ideas of how to continuously improve their development processes."
+    },
+    {
+      "id": 4,
+      "title": "Distributed Version Control mit Git",
+      "category": "Software Engineering",
+      "teacher": "Marco Poli",
+      "date": "Mittwoch, 5. April 2017, 09.00-17.00 Uhr",
+      "abstract": "Git ist ein verteiltes Versionsverwaltungssystem der nächsten Generation. Sie erhalten einen Überblick über Git und lernen, wie Sie Git einsetzen und die dazu erforderlichen Arbeitsabläufe aufsetzen.",
+      "content": "Git unterscheidet sich von traditionellen Versionsverwaltungssystemen. Sie können Git Ihren Arbeitsabläufen anpassen und nicht umgekehrt, wie das bei vielen anderen Systemen der Fall ist. Lernen Sie verschiedenen Einsatzszenarien und Funktionen von Git kennen, um sich ein Bild zu machen und um Git einzusetzen.",
+      "target": "Nach dem Kurs kennen Sie die Vorteile von Git und wie Sie Git in verschiedenen Szenarien einsetzen können. Neben den Abläufen kennen Sie auch die Funktionen, um mit Git im täglichen Einsatz zu bestehen."
+    },
+    {
+      "id": 5,
+      "title": "Exploratory & Context-Driven Testing",
+      "category": "Testing",
+      "teacher": "Kai Lepler",
+      "date": "Freitag, 17. Februar 2017, 09.00-17.00 Uhr",
+      "abstract": "Erleben Sie in diesem praxisnahen Workshop den Einstieg in die spannende Welt des Context-Driven Testings. Sie haben die Möglichkeit, anhand praktischer Übungen die Prinzipien des Explorativen Testens selbst zu erleben, und Sie erhalten einen Einblick, wie Sie als Tester in einem agilen Umfeld durch Exploratives Testen im agilen Sprint mithalten können.",
+      "content": "In einer immer agiler werdenden Welt ist es wichtig, sich orientieren und die Themen, Methoden und Tätigkeiten einordnen zu können. In dem Workshop wird darauf näher eingegangen, und der Teilnehmer kann selbst erfahren, wie verschiedene Herangehensweisen an oftmals unbekannte Aufgabenstellungen erstaunliche Ergebnisse ermöglichen.",
+      "target": "Nach diesem Workshoptag haben Sie einen ersten Einblick in Exploratory & Context-Driven Testing bekommen. Sie wissen, wie Sie Ihr Testobjekt «testen» können, und Sie wissen zwischen Testen und Checken zu unterscheiden. Sie haben verschiedene Testmethoden kennengelernt und erfahren, in welcher Situation (... in welchem «Context») welche Methode sinnvoll eingesetzt werden kann. Ebenfalls beleuchtet wurde die Frage der Testautomatisierung im Kontext von erfahrungsbasierten Testmethoden."
+    },
+    {
+      "id": 6,
+      "title": "Erfolgreiche Neukundengewinnung durch professionelle Telefonakquisition",
+      "category": "Sonstige",
+      "teacher": "Michael Wilberz",
+      "date": "Mittwoch, 1. März 2017, 09.00-17.00 Uhr",
+      "abstract": "Aufträge steigern - Umsätze sichern durch eigenes Telefonmarketing. Lernen Sie, erfolgreich das Telefon als Akquise-Instrument für die Neukundengewinnung einzusetzen. Der Erfolg einer telefonischen Kaltkundenkampagne ist planbar. Profitieren Sie von Beispielen aus der Praxis der Neukunden-gewinnung. Setzen Sie sofort das Erlernte in telefonischen Kundenkontakten ein und steigern Sie so Ihren Umsatz.",
+      "content": "Die telefonische Erstkundenansprache wird ein immer wichtigeres Instrument im Bereich der erklärungsbedürftigen Produkte- und Dienstleistungen für den B2B-Vertrieb. Die Erstterminvereinbarung ist oft der erste Schritt für eine Neukundengewinnung.",
+      "target": "Erfolgreiche telefonische Neukundenansprache ist lernbar und verhilft Ihnen und Ihrem Unternehmen zu mehr und tieferen Kontakten zu potenziellen Kunden."
+    },
+    {
+      "id": 7,
+      "title": "Test-Driven Development in C# .NET",
+      "category": "Testing",
+      "teacher": "Marco Ravicini",
+      "date": "Donnerstag/Freitag, 26./27. Oktober 2017, 09.00-17.00 Uhr",
+      "abstract": "Test Driven Development (TDD) ist die Basis für ein erfolgreiches agiles Projekt. Durch den Einsatz von TDD und ATDD wird es möglich, auf Änderungen der Anforderungen zu reagieren, mit der Sicherheit, dass bestehende Funktionalität nicht ungewollt verändert wurde.",
+      "content": "Test Driven Development (TDD) ist die Basis für ein erfolgreiches agiles Projekt. Durch den Einsatz von TDD und ATDD wird es möglich, auf Änderungen der Anforderungen zu reagieren, mit der Sicherheit, dass bestehende Funktionalität nicht ungewollt verändert wurde. Test Driven Development führt zu Sicherheit und Änderbarkeit auf der Stufe «Klassen», Acceptance Test Driven Development führt zu Sicherheit und Änderbarkeit auf der Stufe «Feature» und «System».",
+      "target": "Sie lernen, wie Sie TDD und ATDD anwenden. Sie erfahren, wie eine automatisierte Testsuite Sie vor Regression schützt und Ihre Entwicklung mit besserer Qualität schneller vorantreibt."
+    },
+    {
+      "id": 8,
+      "title": "Test-Driven Development in C++",
+      "category": "Testing",
+      "teacher": "Michel Estermann",
+      "date": "Montag/Dienstag, 20./21. März 2017, 09.00-17.00 Uhr",
+      "abstract": "Nutzen Sie die Chance, Test Driven Development erfolgreich in Ihrem C++-Projekt einzusetzen. Sie erlernen die Grundlagen der Entwicklungsmethode TDD und verstehen die unterstützenden Werkzeuge und Frameworks anzuwenden.",
+      "content": "Test Driven Development (TDD) ist eine bewährte und erfolgreich eingesetzte Entwicklungsmethode und die Basis für ein erfolgreiches Softwareprojekt. Durch den Einsatz von TDD wird es möglich, Software zu entwickeln, die hohe Qualitätsanforderungen erfüllt, einfacher wartbar, erweiterbar und änderbar bleibt.",
+      "target": "Nach diesem Workshop kennen Sie die Grundlagen von Test Driven Development und können es in Ihrem Projekt umsetzen. Sie verstehen sowohl die Regeln und Prinzipien der Test getriebenen Entwicklung als auch die unterstützenden Werkzeuge und Frameworks."
+    },
+    {
+      "id": 9,
+      "title": "Xamarin - Cross-Platform Mobile Apps mit C#",
+      "category": "Software Engineering",
+      "teacher": "Thomas Kälin",
+      "date": "Montag-Mittwoch, 24.-26. April 2017, 08.00-17.15 Uhr",
+      "abstract": "Lernen Sie von erfahrenen Experten, wie Sie unter Verwendung von Xamarin mit nur einer Codebasis in C# Mobile Apps für Android, iOS und Windows Mobile entwickeln können.",
+      "content": "Während der letzten Jahre hat sich Xamarin von einem Nischenprodukt zu einem der führenden Produkte im Bereich der Cross-Plattform-Entwicklung von Mobile Apps emporgearbeitet. Die Möglichkeit, mit einer Quellcodebasis in C# und den gewohnten .NET-Tools, wie Visual Studio und ReSharper, Apps für alle wichtigen Plattformen zu erstellen, überzeugt täglich mehr Entwickler. Seit der Übernahme von Xamarin durch Microsoft im April dieses Jahres ist nun eine weitere grosse Hürde gefallen: Mussten früher hunderte von Dollars an Lizenzkosten zur Verwendung von Xamarin bezahlt werden, so ist Xamarin seit Visual Studio 2015 (Update 2) in allen Versionen von Visual kostenlos enthalten.",
+      "target": "Sie kennen die wichtigsten Xamarin-Produkte und haben einfache Apps mit Xamarin entwickelt"
+    },
+    {
+      "id": 10,
+      "title": "ATDD/BDD mit C++",
+      "category": "Testing",
+      "teacher": "Michel Estermann",
+      "date": "Dienstag/Mittwoch, 2./3. Mai 2017, 09.00-17.00 Uhr",
+      "abstract": "Lernen Sie ATDD und Behaviour Driven Development (BDD) zur Spezifikation einer Software zu nutzen und erfahren Sie, wie BDD als Kommunikationsmittel zwischen Business und Entwicklung die Softwareentwicklung verbessert. Anhand einer Geschäftsidee lernen Sie das gesamte Vorgehen kennen und können dies anschliessend in Ihrem Projekt umsetzen.",
+      "content": "Lernen Sie Behaviour Driven Development (BDD) kennen als Spezifikation des Systems und als Kommunikationsmittel und Schnittstelle zwischen Business und Entwicklung und erfahren Sie die Vorteile und Grenzen mit BDD. Anhand einer einfachen Geschäftsidee werden Sie, angefangen bei den User Stories eines Produkt-Backlogs, ausführbare Szenarien schreiben. Diese Szenarien treiben Ihre Entwicklung dann weiter mittels Unit Tests zu einer wartbaren und qualitativ hochwertigen Lösung voran.",
+      "target": "Sie können ATDD/BDD in Ihrem Projekt umsetzen. Sie ermöglichen so eine iterative und inkrementelle Softwareentwicklung mit höchster Qualität. Sie gewinnen langfristige Anpassbarkeit Ihrer Software an neue oder geänderte Geschäftsanforderungen und erhalten eine ausführliche, immer aktuelle Spezifikation Ihres Gesamtsystems."
+    }
+  ]
+}

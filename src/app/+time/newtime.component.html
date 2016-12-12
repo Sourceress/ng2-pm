@@ -1,0 +1,32 @@
+<h2>Neuen Eintrag hinzufügen</h2>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="dateInput">Datum</label>
+      <input [(ngModel)]="date" type="date" class="form-control" id="dateInput">
+    </div>
+    <div class="form-group">
+      <label for="projectSelect">Projekt</label>
+      <select [(ngModel)]="project" class="form-control" id="projectSelect" (change)="onSelect($event.target.value)">
+          <option *ngFor="let project of projects" value="{{ project.name }}" >{{ project.name }}</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="costTypeSelect">Kostengruppe</label>
+      <select [(ngModel)]="costType" class="form-control" id="costTypeSelect">
+          <option *ngFor="let costType of costTypes">{{ costType.name }}</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="timeInput">Zeit</label>
+      <input [(ngModel)]="amount" type="number" class="form-control" id="timeInput">
+    </div>
+    <div class="form-group">
+      <label for="commentInput">Kommentar</label>
+      <textarea [(ngModel)]="comment" class="form-control" id="commentInput" rows="4"></textarea>
+    </div>
+
+    <button class="btn btn-primary" (click)="save()">Speichern</button>
+  </div>
+</div>

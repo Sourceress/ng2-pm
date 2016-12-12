@@ -1,0 +1,30 @@
+<div class="row" *ngIf="course">
+  <div class="col-md-8">
+    <h2>{{ course.title }}</h2>
+
+    <h3>Kurs-Inhalt</h3>
+    <p>{{ course.content }}</p>
+
+    <h3>Kurs-Ziele</h3>
+    <p>{{ course.target }}</p>
+
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-3">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br />
+          <span>{{ course.teacher }}</span>
+        </div>
+        <div class="col-md-5">
+          <span class="glyphicon glyphicon-time" aria-hidden="true"></span><br />
+          <span>{{ course.date }}</span>
+        </div>
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span><br />
+          <span>bbv Software Services AG<br />Blumenrain 10<br />6002 Luzern</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="goBack()">Go Back</button>
+  </div>
+</div>
