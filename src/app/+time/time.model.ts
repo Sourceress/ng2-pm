@@ -1,6 +1,6 @@
-export interface Time {
+export class Time {
   id: number;
-  date: Date;
+  date: string;
   amount: number;
   project: string;
   costType: string;

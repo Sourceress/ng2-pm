@@ -27,7 +27,7 @@ export class TimeService {
   }
 
   saveTime(
-    date: Date,
+    date: string,
     project: string,
     costType: string,
     amount: number,
@@ -47,4 +47,21 @@ export class TimeService {
     console.warn(error);
     return Observable.throw(error.json().message || 'Server error');
   }
+
+  getTime(id: number): Observable<Time> {
+      let url = this.baseUrl + 'api/times/' + id;
+
+      return this.http.get(url)
+          .map(response => response.json())
+          .catch(this.handleError);
+  }
+
+    updateTime(time: Time) {
+        let url = this.baseUrl + 'api/times/' + time.id;
+
+        return this.http.put(url, time)
+            .map(response => response.json())
+            .catch(this.handleError);
+        
+    }
 }

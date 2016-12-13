@@ -12,7 +12,7 @@ export class NewTimeComponent implements OnInit {
   public projects: Project[];
   public costTypes: CostType[];
 
-  public date: Date;
+  public date: string;
   public project: string;
   public costType: string;
   public amount: number;
@@ -25,7 +25,7 @@ export class NewTimeComponent implements OnInit {
       this.projects = p;
       this.onSelect(p[0].name);
 
-      this.date = new Date();
+      this.date = new Date().toISOString().substring(0,10);
       this.project = this.projects[0].name;
       this.costType = this.costTypes[0].name;
     });
